@@ -1,7 +1,26 @@
 const form = document.querySelector(".login-form");
+const button = document.querySelector("button");
+const input = document.querySelector("input");
+const inputTwo = document.querySelector('input[type="password"]');
+
 console.log(form);
 
 form.addEventListener("submit", checkForm);
+
+form.style.display = "flex";
+form.style.flexWrap = "wrap";
+form.style.flexDirection = "column";
+form.style.gap = "10px";
+input.style.borderRadius = "5px";
+input.style.borderColor = "#4E75FF";
+inputTwo.style.borderRadius = "5px";
+inputTwo.style.borderColor = "#4E75FF";
+button.style.backgroundColor = "#4E75FF";
+button.style.color = "#FFFFFF";
+button.style.border = "none";
+button.style.borderRadius = "5px";
+button.style.width = "60px";
+button.style.height = "26px";
 
 function checkForm(ev) {
   ev.preventDefault();
