@@ -37,6 +37,8 @@ const newGallery = (images) => {
     .join("");
 };
 
+body.insertAdjacentHTML("afterbegin", "<h2>Натисни для зміни кольору!</h2>");
+
 gallery.insertAdjacentHTML("beforeend", newGallery(images));
 
 body.style.cursor = "pointer";
