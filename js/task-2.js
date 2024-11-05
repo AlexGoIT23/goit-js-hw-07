@@ -37,11 +37,14 @@ const newGallery = (images) => {
     .join("");
 };
 
-body.insertAdjacentHTML("afterbegin", "<h2>Натисни для зміни кольору!</h2>");
+body.insertAdjacentHTML(
+  "afterbegin",
+  "<h2>Натисни галерею для зміни кольору!</h2>"
+);
 
 gallery.insertAdjacentHTML("beforeend", newGallery(images));
 
-body.style.cursor = "pointer";
+gallery.style.cursor = "pointer";
 gallery.style.display = "flex";
 gallery.style.flexWrap = "wrap";
 gallery.style.gap = "80px";
@@ -51,7 +54,7 @@ gallery.style.paddingRight = "300px";
 gallery.style.paddingTop = "50px";
 gallery.style.paddingBottom = "50px";
 
-body.addEventListener("click", changeColor);
+gallery.addEventListener("click", changeColor);
 function changeColor() {
   gallery.style.backgroundColor = getRandomHexColor();
 }
