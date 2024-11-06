@@ -12,15 +12,17 @@ form.style.flexWrap = "wrap";
 form.style.flexDirection = "column";
 form.style.gap = "10px";
 input.style.borderRadius = "5px";
-input.style.borderColor = "#4E75FF";
+input.style.border = "2px, solid, #4E75FF";
 inputTwo.style.borderRadius = "5px";
-inputTwo.style.borderColor = "#4E75FF";
+inputTwo.style.border = "2px, solid, #4E75FF";
 button.style.backgroundColor = "#4E75FF";
 button.style.color = "#FFFFFF";
-button.style.border = "none";
+button.style.borderColor = "#4E75FF";
+button.style.borderStyle = "solid";
 button.style.borderRadius = "5px";
 button.style.width = "60px";
 button.style.height = "26px";
+button.style.cursor = "pointer";
 
 function checkForm(ev) {
   ev.preventDefault();
