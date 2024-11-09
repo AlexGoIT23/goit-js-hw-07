@@ -8,7 +8,7 @@ input.style.width = "300px";
 input.style.border = "3px, solid, #000000";
 
 function addName(ev) {
-  if (ev.target.value.includes(" ") || ev.target.value.length === 0) {
+  if (ev.target.value.length === 0) {
     return (title.textContent = "Anonymous");
-  } else return (title.textContent = `${ev.target.value}`);
+  } else return (title.textContent = `${ev.target.value.trim()}`);
 }
