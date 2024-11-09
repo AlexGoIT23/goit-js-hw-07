@@ -31,8 +31,8 @@ const body = document.querySelector("body");
 const newGallery = (images) => {
   return images
     .map(
-      (img) => `
-  <li><img src="${img.url}" alt="${img.alt}" width=500px height=300px></img></li>`
+      ({ url, alt }) => `
+  <li><img src="${url}" alt="${alt}" width=500px height=300px></img></li>`
     )
     .join("");
 };
